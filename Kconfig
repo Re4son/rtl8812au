@@ -1,6 +1,53 @@
+menuconfig RTL8xxx 
+	bool "Realtek 8xxx Wireless support"
+
+if RTL8xxx
+
+config RTL8812AU
+	tristate "Realtek 8812A USB WiFi"
+	depends on USB
+	---help---
+	  Help message of RTL8812AU
+
+config RTL8188E
+	tristate "Realtek 8188E USB WiFi"
+	depends on USB
+	---help---
+	  Help message of RTL8188E
+
 config RTL8821AU
 	tristate "Realtek 8821A USB WiFi"
 	depends on USB
 	---help---
 	  Help message of RTL8821AU
 
+config RTL8192E
+	tristate "Realtek 8192E USB WiFi"
+	depends on USB
+	---help---
+	  Help message of RTL8192E
+
+config RTL8723B
+	tristate "Realtek 8723B USB WiFi"
+	depends on USB
+	---help---
+	  Help message of RTL8723B
+
+config RTL8814A
+	tristate "Realtek 8814A USB WiFi"
+	depends on USB
+	---help---
+	  Help message of RTL8814A
+
+config RTL8703B
+	tristate "Realtek 8703B USB WiFi"
+	depends on USB
+	---help---
+	  Help message of RTL8703B
+
+config RTL8188F
+	tristate "Realtek 8188F USB WiFi"
+	depends on USB
+	---help---
+	  Help message of RTL8188F
+endif
